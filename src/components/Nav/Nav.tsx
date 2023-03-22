@@ -98,16 +98,19 @@ const Nav = () => {
         {matches ? (
           <>
             <Typography variant="h6" color="inherit" noWrap className={classes.toolbarTitle}>     
-            <a rel="noopener noreferrer" href="https://8bitcats.com" className={classes.link}>
-              <img alt="MiniVerse" src={mvLogo} height="50px" style={{marginTop: '15px'}} />
-              </a> 
+        {/*    <a rel="noopener noreferrer" href="https://cryotoverse.lol" className={classes.link}>
+              <img alt="Cryptoverse" src={mvLogo} height="50px" style={{marginTop: '15px'}} />
+        </a> */}
             </Typography>
              <AccountButton text="Connect" />
             <Box mr={5}>
               <Link color="textPrimary" to="/" className={classes.link}>
                 Home
               </Link>
-                                <Link color="textPrimary" to="/boardroom" className={classes.link}>
+                             <Link color="textPrimary" to="/llama" className={classes.link}>
+                Llama
+              </Link>
+          {/*                     <Link color="textPrimary" to="/boardroom" className={classes.link}>
                 Boardroom
               </Link>
                                 <Link color="textPrimary" to="/farms" className={classes.link}>
@@ -144,13 +147,11 @@ const Nav = () => {
                 Cryptoman
               </Link>
                
-                <Link color="textPrimary" to="/fantomllama" className={classes.link}>
-                Fantom Llama
-              </Link>
+ 
                           <Link color="textPrimary" to="/catland" className={classes.link}>
                 CatLand
               </Link>
-           
+
             
                       <Link color="textPrimary" to="/info" className={classes.link}>
                 Info
@@ -159,7 +160,7 @@ const Nav = () => {
                 Whitepaper
               </Link>
 
-
+        */}
 
 
               {/* <Link color="textPrimary" to="/dividends" className={classes.link}>
@@ -223,8 +224,11 @@ const Nav = () => {
                   <AccountButton text="Connect" />
                 </ListItem>
                 <ListItemLink primary="HOME" to="/" />
-                <ListItemLink primary="BOARDROOM" to="/boardroom" />
+                <ListItemLink primary="LLAMAS" to="/llama" />
+            
                 <ListItemLink primary="FARMS" to="/farms" />
+                    {/*
+                <ListItemLink primary="BOARDROOM" to="/boardroom" />
                 <ListItemLink primary="DIAMOND STONE" to="/diamondstone" />
                 <ListItemLink primary="CAT STATUE" to="/catstatue" />
                                 <ListItemLink primary="3D CAT" to="/3dcat" />
@@ -241,6 +245,7 @@ const Nav = () => {
     <ListItemText primary="WHITEPAPER" />
   </ListItem>     
 
+            */}
 
 
 

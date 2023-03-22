@@ -1322,7 +1322,7 @@ export class TombFinance {
      * @param address account address
      */
      async mintllamasNFT(account: string, mintAmount: string): Promise<void> {
-      let totalCostWei = String(parseFloat(mintAmount) * 2000000000000000000);
+      let totalCostWei = String(parseFloat(mintAmount) * 8000000000000000);
       try {
       await this.contracts['LlamaWalletNFT'].mint(account, mintAmount,
               {

@@ -6,10 +6,10 @@ import { BankInfo } from './tomb-finance';
 const configurations: { [env: string]: Configuration } = {
 
   production: {
-    chainId: ChainId.MAINNET,
-    networkName: 'Fantom Opera Mainnet',
-    ftmscanUrl: 'https://ftmscan.com',
-    defaultProvider: 'https://rpc.ftm.tools/',
+    chainId: 42161,
+    networkName: 'Arbitrum',
+    ftmscanUrl: 'https://arbiscan.io',
+    defaultProvider: 'https://arb1.arbitrum.io/rpc',
     deployments: require('./tomb-finance/deployments/deployments.mainnet.json'),
     externalTokens: {
       WFTM: ['0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83', 18],
