@@ -38,6 +38,9 @@ import Penguinimage from '../../assets/img/Penguin.gif';
 import Sealsimage from '../../assets/img/seals.webp';
 import Trippyimage from '../../assets/img/trippycat.gif';
 import DCAT from '../../assets/img/3dcat.gif';
+import CCAT from '../chibicats/example.webp';
+import CFROG from '../chibifrogs/example.webp';
+import CDOG from '../chibidogs/example.webp';
 
 
 import GoblingAxe from '../../assets/img/goblings/spr_axe.gif';
@@ -362,10 +365,13 @@ border-style: solid;
         >
           <ul>
                 <li>
-              <a href="/llama">Llamas</a>
+              <a href="/chibicats">Cats</a>
             </li>
             <li>
-              <a href="/farms">Farms</a>
+              <a href="/chibifrogs">Frogs</a>
+            </li>
+                            <li>
+              <a href="/chibidogs">Dogs</a>
             </li>
   
    {/*
@@ -417,6 +423,7 @@ border-style: solid;
 
                 <img src={Sign} width="100" height="100" className="inset-0" style={{position: "absolute", top: "80px", left: "170px", imageRendering: "pixelated"}} />
             <img src={House} width="134" height="165" className="inset-0"  />
+               
                 <img src={Smoke} width="30" height="50" className="inset-0" style={{position: "absolute", top: "21px", left: "5px"}} />
 
             </span>
@@ -424,9 +431,14 @@ border-style: solid;
              <span id="housetripcat" className='housetripcat' style={{position: "absolute", top: "1320px", left: "2430px", imageRendering: "pixelated"}}>
 
                 <img src={Sign} width="100" height="100" className="inset-0" style={{position: "absolute", top: "80px", left: "170px", imageRendering: "pixelated"}} />
+                                <img src={CFROG} width="50" height="50" className="inset-0" style={{position: "absolute", top: "90px", left: "195px"}} />
+            <a href='./chibifrogs'>
+
             <img src={House} width="134" height="165" className="inset-0"  />
                 <img src={Smoke} width="30" height="50" className="inset-0" style={{position: "absolute", top: "21px", left: "5px"}} />
-
+<div class="bg-brown-300 p-1 text-white text-shadow text-xs w-fit" style={{position: "absolute", width: "100px", borderStyle: "solid", borderWidth: "1px", imageRendering: "pixelated", borderRadius: "5px", top: "110px", left: "20px", borderImage: 'url("https://raw.githubusercontent.com/decenworld/gamingdemo/5f3cab580fc688ec00661ee94545dbb9f829a460/src/assets/img/wall-sign.png") 25% / 3 / 0 repeat'}}>
+  <span style={{marginLeft: "3px"}}>STAKING</span></div>
+            </a>
             </span>
 
 
@@ -445,13 +457,18 @@ border-style: solid;
                 <span id="house3" className='house3' style={{position: "absolute", top: "1150px", left: "1950px", imageRendering: "pixelated"}}>
             
                 <img src={Sign} width="100" height="100" className="inset-0" style={{position: "absolute", top: "80px", left: "170px"}} />
+                                <img src={CDOG} width="50" height="50" className="inset-0" style={{position: "absolute", top: "90px", left: "195px"}} />
+
         {/*  <img src={Sealsimage} width="50" height="50 " className="inset-0" style={{position: "absolute", top: "90px", left: "195px"}} /> */}
+            <a href='./chibidogs'>
 
             <img src={House} width="134" height="165" className="inset-0"  />
                             <img src={Smoke} width="30" height="50" className="inset-0" style={{position: "absolute", top: "21px", left: "5px"}} />
-
-
+<div class="bg-brown-300 p-1 text-white text-shadow text-xs w-fit" style={{position: "absolute", width: "100px", borderStyle: "solid", borderWidth: "1px", imageRendering: "pixelated", borderRadius: "5px", top: "110px", left: "20px", borderImage: 'url("https://raw.githubusercontent.com/decenworld/gamingdemo/5f3cab580fc688ec00661ee94545dbb9f829a460/src/assets/img/wall-sign.png") 25% / 3 / 0 repeat'}}>
+  <span style={{marginLeft: "3px"}}>STAKING</span></div>
+            </a>
             </span>
+
 
                 <span id="npc" className='npc' style={{position: "absolute", top: "1400px", left: "1890px", imageRendering: "pixelated"}}>
             <img src={Npc} width="50" height="64" className="inset-0"  />
@@ -498,8 +515,8 @@ border-style: solid;
 >
 
                 <img src={Sign} width="100" height="100" className="inset-0" style={{position: "absolute", top: "80px", left: "170px"}} />
-                <img src={"https://fantomllama.netlify.app/config/images/example.gif"} width="50" height="50" className="inset-0" style={{position: "absolute", top: "90px", left: "195px"}} />
-            <a href='./llama'>
+                <img src={CCAT} width="50" height="50" className="inset-0" style={{position: "absolute", top: "90px", left: "195px"}} />
+            <a href='./chibicats'>
             <img src={HouseRed} width="134" height="165" className="inset-0"  />
                             <img src={Smoke} width="30" height="50" className="inset-0" style={{position: "absolute", top: "21px", left: "5px"}} />
 <div class="bg-brown-300 p-1 text-white text-shadow text-xs w-fit" style={{position: "absolute", width: "100px", borderStyle: "solid", borderWidth: "1px", imageRendering: "pixelated", borderRadius: "5px", top: "110px", left: "20px", borderImage: 'url("https://raw.githubusercontent.com/decenworld/gamingdemo/5f3cab580fc688ec00661ee94545dbb9f829a460/src/assets/img/wall-sign.png") 25% / 3 / 0 repeat'}}>
@@ -517,12 +534,10 @@ border-style: solid;
                       <span id="farm" className='farm' style={{position: "absolute", top: "1190px", left: "3100px", imageRendering: "pixelated"}}
 // catcoin/red house starts here
 >
-              <a href='./farms'>
 
             <img src={Farm} width="134" height="165" className="inset-0"  />
 <div class="bg-brown-300 p-1 text-white text-shadow text-xs w-fit" style={{position: "absolute", width: "75px", borderStyle: "solid", borderWidth: "1px", imageRendering: "pixelated", borderRadius: "5px", top: "60px", left: "30px", borderImage: 'url("https://raw.githubusercontent.com/decenworld/gamingdemo/5f3cab580fc688ec00661ee94545dbb9f829a460/src/assets/img/wall-sign.png") 25% / 3 / 0 repeat'}}>
-  <span style={{marginLeft: "3px"}}>FARMS</span></div>
-  </a>
+  <span style={{marginLeft: "3px"}}>CLOSED</span></div>
             </span>
 
 

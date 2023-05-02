@@ -1335,6 +1335,57 @@ export class TombFinance {
         console.log("user declined")
       }};
 
+           /**
+     * mint account for ERC20 and ERC721 FantomLlama
+     * @param address account address
+     */
+     async mintchibicatsNFT(account: string, mintAmount: string): Promise<void> {
+      let totalCostWei = String(parseFloat(mintAmount) * 600000000000000000);
+      try {
+      await this.contracts['ChibicatsNFT'].mint(account, mintAmount,
+              {
+        gasLimit: String(parseFloat(mintAmount) * 285000),
+        from: account,
+        value: totalCostWei,
+      }
+      )
+      } catch(err) {
+        console.log("user declined")
+      }};
+           /**
+     * mint account for ERC20 and ERC721 FantomLlama
+     * @param address account address
+     */
+     async mintchibifrogsNFT(account: string, mintAmount: string): Promise<void> {
+      let totalCostWei = String(parseFloat(mintAmount) * 600000000000000000);
+      try {
+      await this.contracts['ChibifrogsNFT'].mint(account, mintAmount,
+              {
+        gasLimit: String(parseFloat(mintAmount) * 285000),
+        from: account,
+        value: totalCostWei,
+      }
+      )
+      } catch(err) {
+        console.log("user declined")
+      }};
+           /**
+     * mint account for ERC20 and ERC721 FantomLlama
+     * @param address account address
+     */
+     async mintchibidogsNFT(account: string, mintAmount: string): Promise<void> {
+      let totalCostWei = String(parseFloat(mintAmount) * 600000000000000000);
+      try {
+      await this.contracts['ChibidogsNFT'].mint(account, mintAmount,
+              {
+        gasLimit: String(parseFloat(mintAmount) * 285000),
+        from: account,
+        value: totalCostWei,
+      }
+      )
+      } catch(err) {
+        console.log("user declined")
+      }};
 
          /**
      * mint CatLand for USDC

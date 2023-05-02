@@ -45,6 +45,9 @@ const Penguin = lazy(() => import('./views/Penguin'));
 const Seal = lazy(() => import('./views/Seal'));
 const Trippycat = lazy(() => import('./views/Trippycat'));
 const DCat = lazy(() => import('./views/3dcat'));
+const Chibicats = lazy(() => import('./views/chibicats'));
+const Chibifrogs = lazy(() => import('./views/chibifrogs'));
+const Chibidogs = lazy(() => import('./views/chibidogs'));
 
 
 const Info = lazy(() => import('./views/Info'));
@@ -156,7 +159,21 @@ const App: React.FC = () => {
             </Route>
                                     <Route path="/3dcat">
               <DCat />
-            </Route>
+                          </Route>
+
+                                                  <Route path="/chibicats">
+                                                    
+              <Chibicats />
+                          </Route>
+
+                                                  <Route path="/chibifrogs">
+              <Chibifrogs />
+                          </Route>
+
+                                                  <Route path="/chibidogs">
+              <Chibidogs />
+                          </Route>
+
             <Route path="*">
               <NoMatch />
             </Route>

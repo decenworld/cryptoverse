@@ -107,8 +107,14 @@ const Nav = () => {
               <Link color="textPrimary" to="/" className={classes.link}>
                 Home
               </Link>
-                             <Link color="textPrimary" to="/llama" className={classes.link}>
-                Llama
+                             <Link color="textPrimary" to="/chibicats" className={classes.link}>
+                Cats
+              </Link>
+                                           <Link color="textPrimary" to="/chibifrogs" className={classes.link}>
+                Frogs
+              </Link>
+                                           <Link color="textPrimary" to="/chibidogs" className={classes.link}>
+                Dogs
               </Link>
           {/*                     <Link color="textPrimary" to="/boardroom" className={classes.link}>
                 Boardroom
@@ -224,9 +230,11 @@ const Nav = () => {
                   <AccountButton text="Connect" />
                 </ListItem>
                 <ListItemLink primary="HOME" to="/" />
-                <ListItemLink primary="LLAMAS" to="/llama" />
+                <ListItemLink primary="CATS" to="/chibicats" />
             
-                <ListItemLink primary="FARMS" to="/farms" />
+                <ListItemLink primary="FROGS" to="/chibifrogs" />
+                <ListItemLink primary="DOGS" to="/chibidogs" />
+
                     {/*
                 <ListItemLink primary="BOARDROOM" to="/boardroom" />
                 <ListItemLink primary="DIAMOND STONE" to="/diamondstone" />

@@ -6,10 +6,10 @@ import { BankInfo } from './tomb-finance';
 const configurations: { [env: string]: Configuration } = {
 
   production: {
-    chainId: 42161,
-    networkName: 'Arbitrum',
-    ftmscanUrl: 'https://arbiscan.io',
-    defaultProvider: 'https://arb1.arbitrum.io/rpc',
+    chainId: 137,
+    networkName: 'Polygon Mainnet',
+    ftmscanUrl: 'https://polygonscan.com/',
+    defaultProvider: 'https://polygon-rpc.com/',
     deployments: require('./tomb-finance/deployments/deployments.mainnet.json'),
     externalTokens: {
       WFTM: ['0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83', 18],
