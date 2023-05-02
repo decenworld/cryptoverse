@@ -9,7 +9,7 @@ const configurations: { [env: string]: Configuration } = {
     chainId: 137,
     networkName: 'Polygon Mainnet',
     ftmscanUrl: 'https://polygonscan.com/',
-    defaultProvider: 'https://polygon-rpc.com/',
+    defaultProvider: 'https://polygon.rpc.blxrbdn.com',
     deployments: require('./tomb-finance/deployments/deployments.mainnet.json'),
     externalTokens: {
       WFTM: ['0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83', 18],
